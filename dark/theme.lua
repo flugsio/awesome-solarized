@@ -27,27 +27,33 @@ theme.colors.violet  = "#6c71c4"
 theme.colors.blue    = "#268bd2"
 theme.colors.cyan    = "#2aa198"
 theme.colors.green   = "#859900"
+theme.colors.tmux_base2 = "#232323"
+theme.colors.tmux_orange = "#d75f00"
+theme.colors.tmux_yellow = "#b58900"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "ubuntu 9"
+theme.font      = "Ubuntu Mono Bold 10"
 
 -- {{{ Colors
-theme.fg_normal  = theme.colors.base02
-theme.fg_focus   = theme.colors.base03
-theme.fg_urgent  = theme.colors.base3
+theme.fg_normal  = theme.colors.base01
+theme.fg_focus   = theme.colors.tmux_orange
+theme.fg_urgent  = theme.colors.red
 
-theme.bg_normal  = theme.colors.base3
-theme.bg_focus   = theme.colors.base1
-theme.bg_urgent  = theme.colors.red
+theme.bg_normal  = theme.colors.tmux_base2
+theme.bg_focus   = theme.colors.tmux_base2
+theme.bg_urgent  = theme.colors.tmux_base2
+-- theme.bg_focus   = theme.colors.base1
+-- theme.bg_urgent  = theme.colors.red
+theme.fg_systray = theme.colors.tmux_yellow
 theme.bg_systray = theme.bg_normal
 -- }}}
 
 -- {{{ Borders
-theme.border_width  = "2"
+theme.border_width  = "1"
 theme.border_normal = theme.bg_normal
-theme.border_focus  = theme.bg_focus
-theme.border_marked = theme.bg_urgent
+theme.border_focus  = theme.fg_focus
+theme.border_marked = theme.fg_urgent
 -- }}}
 
 -- {{{ Titlebars
